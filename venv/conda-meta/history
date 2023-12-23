@@ -11,3 +11,52 @@
 +defaults/win-64::vs2015_runtime-14.27.29016-h5e58377_2
 +defaults/win-64::wheel-0.41.2-py38haa95532_0
 # update specs: ['python==3.8']
+==> 2023-12-21 21:16:57 <==
+# cmd: C:\ProgramData\anaconda3\Scripts\conda-script.py install -p venv ipykernel --update-deps --force-reinstall
+# conda version: 23.7.4
+-defaults/win-64::openssl-1.1.1w-h2bbff1b_0
+-defaults/win-64::python-3.8.0-hff0d562_2
++defaults/noarch::asttokens-2.0.5-pyhd3eb1b0_0
++defaults/noarch::backcall-0.2.0-pyhd3eb1b0_0
++defaults/noarch::decorator-5.1.1-pyhd3eb1b0_0
++defaults/noarch::executing-0.8.3-pyhd3eb1b0_0
++defaults/noarch::importlib_metadata-6.0.0-hd3eb1b0_0
++defaults/noarch::parso-0.8.3-pyhd3eb1b0_0
++defaults/noarch::pickleshare-0.7.5-pyhd3eb1b0_1003
++defaults/noarch::pure_eval-0.2.2-pyhd3eb1b0_0
++defaults/noarch::python-dateutil-2.8.2-pyhd3eb1b0_0
++defaults/noarch::six-1.16.0-pyhd3eb1b0_1
++defaults/noarch::stack_data-0.2.0-pyhd3eb1b0_0
++defaults/noarch::wcwidth-0.2.5-pyhd3eb1b0_0
++defaults/win-64::colorama-0.4.6-py38haa95532_0
++defaults/win-64::comm-0.1.2-py38haa95532_0
++defaults/win-64::debugpy-1.6.7-py38hd77b12b_0
++defaults/win-64::importlib-metadata-6.0.0-py38haa95532_0
++defaults/win-64::ipykernel-6.25.0-py38h9909e9c_0
++defaults/win-64::ipython-8.12.2-py38haa95532_0
++defaults/win-64::jedi-0.18.1-py38haa95532_1
++defaults/win-64::jupyter_client-8.6.0-py38haa95532_0
++defaults/win-64::jupyter_core-5.5.0-py38haa95532_0
++defaults/win-64::libffi-3.4.4-hd77b12b_0
++defaults/win-64::libsodium-1.0.18-h62dcd97_0
++defaults/win-64::matplotlib-inline-0.1.6-py38haa95532_0
++defaults/win-64::nest-asyncio-1.5.6-py38haa95532_0
++defaults/win-64::openssl-3.0.12-h2bbff1b_0
++defaults/win-64::packaging-23.1-py38haa95532_0
++defaults/win-64::platformdirs-3.10.0-py38haa95532_0
++defaults/win-64::prompt-toolkit-3.0.36-py38haa95532_0
++defaults/win-64::psutil-5.9.0-py38h2bbff1b_0
++defaults/win-64::pygments-2.15.1-py38haa95532_1
++defaults/win-64::python-3.8.18-h1aa4202_0
++defaults/win-64::pywin32-305-py38h2bbff1b_0
++defaults/win-64::pyzmq-25.1.0-py38hd77b12b_0
++defaults/win-64::tornado-6.3.3-py38h2bbff1b_0
++defaults/win-64::traitlets-5.7.1-py38haa95532_0
++defaults/win-64::typing_extensions-4.7.1-py38haa95532_0
++defaults/win-64::zeromq-4.3.4-hd77b12b_0
++defaults/win-64::zipp-3.11.0-py38haa95532_0
+# update specs: ['wheel', 'pickleshare', 'platformdirs', 'packaging', 'traitlets', 'jedi', 'backcall', 'comm', 'decorator', 'python-dateutil', 'zeromq', 'vs2015_runtime', 'setuptools', 'pure_eval', 'jupyter_client', 'tornado', 'importlib-metadata', 'typing_extensions', 'asttokens', 'libsodium', 'parso', 'sqlite', 'pygments', 'nest-asyncio', 'wcwidth', 'zipp', 'pywin32', 'prompt-toolkit', 'jupyter_core', 'ca-certificates', 'debugpy', 'stack_data', 'pip', 'matplotlib-inline', 'psutil', 'executing', 'six', 'colorama', 'python=3.8', 'pyzmq', 'vc', 'openssl', 'ipython', 'importlib_metadata', 'ipykernel']
+==> 2023-12-21 21:19:01 <==
+# cmd: C:\ProgramData\anaconda3\Scripts\conda-script.py install -p venv ipykernel --update-deps --force-reinstall
+# conda version: 23.7.4
+# update specs: ['prompt-toolkit', 'packaging', 'pickleshare', 'pygments', 'traitlets', 'asttokens', 'decorator', 'setuptools', 'six', 'jedi', 'vc', 'importlib_metadata', 'debugpy', 'typing_extensions', 'wcwidth', 'matplotlib-inline', 'openssl', 'sqlite', 'colorama', 'ca-certificates', 'pure_eval', 'backcall', 'libffi', 'jupyter_client', 'parso', 'zipp', 'pip', 'zeromq', 'vs2015_runtime', 'nest-asyncio', 'platformdirs', 'comm', 'ipython', 'executing', 'python=3.8', 'libsodium', 'python-dateutil', 'wheel', 'importlib-metadata', 'pywin32', 'tornado', 'jupyter_core', 'stack_data', 'psutil', 'pyzmq', 'ipykernel']
