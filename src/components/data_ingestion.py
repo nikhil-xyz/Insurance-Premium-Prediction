@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
 from src.components.data_transformation import DataTransformation, DataTransformationConfig
+from src.components.model_trainer import ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
@@ -29,7 +30,7 @@ class DataIngestion:
             df.to_csv(self.ingestion_config.raw_data_path, header=True, index=False)
 
             logging.info('Train test split initiated')
-            train_set, test_set = train_test_split(df, test_size=0.25, random_state=45)
+            train_set, test_set = train_test_split(df, test_size=0.2, random_state=5)
 
             train_set.to_csv(self.ingestion_config.train_data_path, header=True, index=False)
             test_set.to_csv(self.ingestion_config.test_data_path, header=True, index=False)
@@ -50,3 +51,8 @@ if __name__ == "__main__":
 
     data_transformation = DataTransformation()
     train_arr, test_arr,_ = data_transformation.initiate_data_transformation(train_path, test_path)
+
+    trainer = ModelTrainer()
+    r2 = trainer.initiate_model_trainer(train_arr, test_arr)
+    print(r2)
+    logging.info(f'model accuracy is {r2}')
