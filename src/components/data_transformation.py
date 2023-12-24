@@ -15,7 +15,7 @@ from dataclasses import dataclass
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path : str = os.path.join('artifacts', 'preprocessor.pkl')
+    preprocessor_obj_file_path = os.path.join('artifacts', "preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -96,7 +96,6 @@ class DataTransformation:
             return (
                 train_arr,
                 test_arr,
-                self.data_transformation_config.preprocessor_obj_file_path
             )
 
 

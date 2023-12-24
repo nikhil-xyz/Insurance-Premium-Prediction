@@ -57,7 +57,7 @@ class ModelTrainer:
                 },
                 "Gradient Boosting":{
                     # 'learning_rate':[.1,.01,.05,.001],
-                    'n_estimators': [8,16,32,64,150,256]
+                    'n_estimators': [8,16,32,64,128,256]
                 },
                 "Linear Regression":{},
                 "XGBRegressor":{
@@ -76,6 +76,9 @@ class ModelTrainer:
             }
 
             model_report : dict = evaluate_models(X_train, y_train, X_test, y_test, models, params)
+        
+            performance_df = pd.DataFrame(list(zip(model_report.keys(), model_report.values())), columns=['Model Name', 'R2_Score']).sort_values(by=["R2_Score"],ascending=False)
+            logging.info(f'Model Report: \n {performance_df}')
 
             best_model_score = max(sorted(model_report.values()))
             best_model_name = list(model_report.keys())[list(model_report.values()).index(best_model_score)]
@@ -97,4 +100,3 @@ class ModelTrainer:
 
         except Exception as e:
             raise CustomException(e, sys)
-
